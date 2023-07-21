@@ -1,0 +1,12 @@
+.Container {
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.Title {
+  font-weight: 500;
+  font-size: 28px;
+  letter-spacing: normal;
+
+  margin-bottom: 10px;
+}
