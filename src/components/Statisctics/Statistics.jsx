@@ -18,7 +18,7 @@ export default function Statistics({ good, neutral, bad, totalCount, positivePer
         Total: {totalCount}
       </p>
       <p className={css.text}>
-        Positive feedback: {`${positivePercentage()}%`}
+        Positive feedback: {positivePercentage}%
       </p>
     </div>
   );
@@ -28,6 +28,6 @@ Statistics.propTypes = {
   good: PropTypes.number.isRequired,
   neutral: PropTypes.number.isRequired,
   bad: PropTypes.number.isRequired,
-  totalCount: PropTypes.number.isRequired,
+  totalCount: PropTypes.func.isRequired,
   positivePercentage: PropTypes.func.isRequired,
 };
